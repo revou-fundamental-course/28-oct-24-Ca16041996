@@ -1,1 +1,1 @@
-//ini javascriptNYA
+//ini javascript//
