@@ -5,6 +5,22 @@ main{
     justify-content: space-around;
 }
 
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+button {
+    border: 0px;
+    background-color: blue;
+    padding: 8px;
+    border-radius: 4px;
+}
 .color-section{
     background-color: aliceblue;
     padding-top: 8px;
