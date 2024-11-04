@@ -8,8 +8,10 @@
             .text center {
                 text-align: center;
             }
+            button 
         </style>
         <link rel="stylesheet" href="css\styles.css">
+        <script src="28-oct-24-Ca16041996\js\script.js"></script>
     </head>
     <body>
         <main>
@@ -31,19 +33,36 @@
             </div>
              <form class="color-section">
                 <div>
+                <label form="jenis kelamin">Jenis Kelamin</label>
+                <hr>
+                <input type="radio" name="Jk" value="Pria">Pria
+                <input type="radio" name="Jk" value="Perempuan">Perempuan
+                </hr>
+                </div>
+                <div>
                     <label form="berat-badan">Berat Badan (Kg):</label>
                     <input id="berat-badan" type="number"/>
                 </div>
                 <div>
                     <label form="Usia">Usia (tahun):</label>
-                    <input id="usia" type"number"/>
+                    <input id="usia" type="number"/>
                 </div>
                 <div>
                     <label form="Tinggi Badan">Tinggi Badan(Cm):</label>
                     <input id="Tinggi Badan" type="number"/>
                 </div>
-                <button>Hitung BMI</button>
-                <button>Reset</button>
+                <button onclick="Hasil()">Hitung BMI</button>
+                   <script>
+                      function Hasil(){
+                        alert("Hasil BMI");
+                      }
+                   </script>
+                <button onclick="Reset()">Reset</button>
+                   <script>
+                    function Reset(){
+                        alert ("Reset Hasil Hitung BMI");
+                    }
+                   </script>
              </form>
 
              <div>
@@ -69,7 +88,12 @@
 
                 <p id="result">24,7</p>
                 <p>Anda memiliki Berat Badan Lebih</p>
-                <button>Donwload Hasil BMI</button>
+                <button onclick="Donwload()">Donwload Hasil BMI</button>
+                <script>
+                    function Donwload(){
+                        alert("Download Hasil BMI");
+                    }
+                </script>
               </div>
               <!--Info dari Hasil-->
               <article>
@@ -81,22 +105,42 @@
                    Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan 
                    untuk menurunkan berat badan hingga batas normal. </p>
               </article>
-              <button>Konsultasi Ahli Gizi Via Aplikasi</button>
-              <button>Regristrasi online Ahli Gizi</button>
+              <button onclick="Konsultasi()">Konsultasi Ahli Gizi Via Aplikasi</button>
+                  <script>
+                    function Konsultasi(){
+                        alert("Konsultasi");
+                    }
+                  </script>
+              <button onclick="Regristrasi()">Regristrasi online Ahli Gizi</button>
+                 <script>
+                    function Regristrasi(){
+                        alert("Regristrasi");
+                    }
+                 </script>
               <artickel>
                 <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit
                     Seseorang Anda perlu Konsultasi lebih lanjut mengenai resiko kekhawatiran Anda terkait dengan
                     berat badan Anda.</p>
               </artickel>
               <div >
-                <p class="text-center">Beberapa penyakit yang berasal dari kegemukan.
-                Diabetes
-                Hipertensi
-                Sakit jantung
-                Osteoathieist</p>
+                <p class="text-center">Beberapa penyakit yang berasal dari kegemukan.</p>
+                <p class="text-center">Diabetes</p>
+                <p class="text-center">Hipertensi</p>
+                <p class="text-center">Sakit jantung</p>
+                <p class="text-center">Osteoathieist</p>
               </div>
-              <button>Konsultasi Ahli Gizi Via Aplikasi</button>
-              <button>Regristrasi online Ahli Gizi</button>
+              <button onclick="Konsultasi()">Konsultasi Ahli Gizi Via Aplikasi</button>
+                  <script>
+                    function Konsultasi(){
+                        alert("Konsultasi");
+                    }
+                  </script>
+              <button onclick="Regristrasi()">Regristrasi online Ahli Gizi</button>
+              <script>
+                 function Regristrasi(){
+                     alert("Regristrasi");
+                 }
+              </script>
          </section>
          </main>
          <footer>
